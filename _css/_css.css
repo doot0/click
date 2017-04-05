@@ -1,0 +1,150 @@
+@import url("reset.css");
+/* REUSABLE */
+.active {
+    display: block !important;
+}
+.deactive {
+    transform: scale(0) !important;
+}
+.none{
+    display:none;
+}
+/* KONIEC REUSABLE */
+
+/* LEVEL DONE/ACUTAL */
+
+.acutal{
+    background-color:green;
+}
+.level-done{
+    background-color:red;
+    text-decoration: line-through;
+}
+
+/* KONIEC LEVEL DONE/ACUTAL */
+
+
+.container{
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+    background-size: cover;
+    color:white;
+}
+
+.level-amount{
+    width:15%;
+    height:auto;
+    float:left;
+    margin-top:9%;
+    margin-lefT:10%;
+    border:2px solid white;
+    border-radius:5px;
+    box-shadow: 2px 2px 2px white;
+    display:none;
+}
+.level-list{
+    font-size:1.5rem;
+}
+li:last-child{
+    border-bottom: none;
+}
+.level{
+    width:100%;
+    text-align:center;
+    border-bottom:2px solid white;
+    line-height:45px;
+}
+
+.game-screen{
+    width:40%;
+    height:75vh;
+    margin-top:5%;
+    margin-right:15%;
+    float:right;
+    display:none;
+}
+.critical-hit{
+    width:20%;
+    font-size:4rem;
+    height:50px;
+    color:purple;
+    position:absolute;
+    top:65%;
+    right:20%;
+    transform: scale(0) ;
+    transition: transform .6s linear !important;
+}
+.critical-hit-active{
+    transform:scale(1);
+}
+.button{
+    width:100%;
+    position:absolute;
+    top:40%;
+    right:40%;
+}
+.btn{
+    width:250px;
+    height:100px;
+    float:right;
+    margin:auto auto;
+    font-size:2rem;
+}
+.health{
+    width:24%;
+    height:50px;
+    margin-left:7.5%;
+    text-align:center;
+    line-height:50px;
+    display:none;
+    float:left;
+    position: relative;
+}
+.health-mob{
+    width:100%;
+    height:50px;
+    background-color: green;
+}
+.damaged{
+    height:50px;
+    background-color:red;
+    float:right;
+    position: absolute;
+    top:50px;
+    left:95%;
+    transition: width 150ms
+}
+.information{
+    width:100%;
+    height:40vh;
+    background: rgba(0,0,0,0.5);
+    text-align:center;
+    font-size:1.5rem;
+    line-height:20vh;
+    position:absolute;
+    top:30%;
+    transform: scale(0) ;
+    transition: transform .6s linear !important;
+}
+.information-active{
+    transform: scale(1) !important;
+}
+.information #information-text{
+    width:100%;
+    position: relative;
+    top:20%;
+    text-align:center;
+    font-size:2rem;
+}
+
+.monster{
+    width:400px;
+    height:500px;
+    opacity:0;
+    transition: opacity 1.4s linear;
+}
+.monster-active{
+    opacity:1;
+}
+
